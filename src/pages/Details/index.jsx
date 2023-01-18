@@ -1,6 +1,14 @@
 import {useLocation, useNavigate} from "react-router-dom";
 import {Typography} from "@mui/material";
-import {DetailsContainer, FavoriteButtonContainer, Genres, Image, VotesSection, CardHeader} from "./styled-components";
+import {
+    DetailsContainer,
+    FavoriteButtonContainer,
+    Genres,
+    Image,
+    VotesSection,
+    CardHeader,
+    PageContainer, OverviewContainer
+} from "./styled-components";
 import RenderVoteIcon from "../../constants/votes_icons";
 import {GET_GENRE} from "../../constants/genres";
 import FavoriteIcon from '@mui/icons-material/Favorite';
@@ -22,7 +30,7 @@ const DetailsPage = () => {
         }
     }, [navigate, state])
     return(
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 50 }}>
+        <PageContainer>
             <DetailsContainer>
                 <Image
                     src={`https://image.tmdb.org/t/p/original/${backdrop_path}`}
@@ -35,9 +43,11 @@ const DetailsPage = () => {
                         <RenderVoteIcon vote={vote_average}/>
                     </VotesSection>
                 </CardHeader>
-                <Typography variant="resume">
-                    {overview}
-                </Typography>
+                <OverviewContainer>
+                    <Typography variant="resume">
+                        {overview}
+                    </Typography>
+                </OverviewContainer>
                 <Genres>
                     {
                         genre_ids.map(
@@ -51,7 +61,7 @@ const DetailsPage = () => {
                 </FavoriteButtonContainer>
             </DetailsContainer>
             <Section queryKey='similarMovies' title='Similar movies' queryUrl={GetSimilarMovies(id)}/>
-        </div>
+        </PageContainer>
     )
 }
 

@@ -8,14 +8,12 @@ const Logo = forwardRef(({ disabledLink = false, sx, ...other }, ref) => {
             ref={ref}
             component="div"
             sx={{
-                width: 40,
-                height: 40,
                 display: 'inline-flex',
                 ...sx,
             }}
             {...other}
         >
-            <img src={'/assets/Kodear.jpg'} alt='kodear' width={40} height={40}/>
+            <img src={'/assets/Kodear.png'} alt='kodear' height={35}/>
         </Box>
     );
 

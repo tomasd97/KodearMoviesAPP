@@ -2,6 +2,12 @@ import {styled} from "@mui/material/styles";
 import {Card} from "@mui/material";
 
 
+export const PageContainer = styled('div')(() => ({
+    display: 'flex',
+    flexDirection: 'column',
+    gap: 30,
+}));
+
 export const DetailsContainer = styled(Card)(({ theme }) => ({
     backgroundColor: theme.palette.layout.light,
     padding: 10,
@@ -9,6 +15,15 @@ export const DetailsContainer = styled(Card)(({ theme }) => ({
     flexDirection: 'column',
     gap: 10,
     alignItems: 'center',
+}));
+
+export const OverviewContainer = styled('div')(() => ({
+    padding: 5,
+    width: '100%',
+    minHeight: 100,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
 }));
 
 export const CardHeader = styled('div')(() => ({
@@ -19,7 +34,7 @@ export const CardHeader = styled('div')(() => ({
 }));
 
 export const Image = styled('img')(() => ({
-    height: 400
+    height: 360
 }));
 
 

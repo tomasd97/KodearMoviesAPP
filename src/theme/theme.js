@@ -70,7 +70,7 @@ const theme = createTheme({
             color: '#baefef',
             fontWeight: 400,
             lineHeight: 1.5,
-            fontSize: pxToRem(18),
+            fontSize: pxToRem(14),
         },
         genre: {
             color: '#a6a6a6',
