@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  background-image: linear-gradient(#000000, #02152c, #112e7c);
+  min-height: 100vh;
+  width: 100%;
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #0F0F0F;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #1f1f26;
+  box-shadow: inset 0 0 6px #0b46c7;
+}
