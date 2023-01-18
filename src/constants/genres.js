@@ -1,3 +1,5 @@
+//TODO sacar esto y hacer llamado a la api para obtener los géneros
+
 export const GENRES = [
     {
         id: 28,
