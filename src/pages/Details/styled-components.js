@@ -11,31 +11,31 @@ export const DetailsContainer = styled(Card)(({ theme }) => ({
     alignItems: 'center',
 }));
 
-export const CardHeader = styled('div')(({ theme }) => ({
+export const CardHeader = styled('div')(() => ({
     display: 'flex',
     justifyContent: 'center',
     gap: 20,
     alignItems: 'center'
 }));
 
-export const Image = styled('img')(({ theme }) => ({
+export const Image = styled('img')(() => ({
     height: 400
 }));
 
 
-export const VotesSection = styled('div')(({ theme }) => ({
+export const VotesSection = styled('div')(() => ({
     display: 'flex',
     gap: 5,
     alignItems: 'center',
 }));
 
-export const FavoriteButtonContainer = styled('div')(({ theme }) => ({
+export const FavoriteButtonContainer = styled('div')(() => ({
     width: 'max-content',
     height: 'max-content',
     cursor: 'pointer'
 }));
 
-export const Genres = styled('div')(({ theme }) => ({
+export const Genres = styled('div')(() => ({
     display: 'flex',
     gap: 10,
     alignItems: 'center'

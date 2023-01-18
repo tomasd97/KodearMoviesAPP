@@ -39,7 +39,7 @@ const Section = ({ title, queryUrl, queryKey }) => {
 
 export default Section;
 
-export const SectionContainer = styled('div')(({ theme }) => ({
+export const SectionContainer = styled('div')(() => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'flex-start',

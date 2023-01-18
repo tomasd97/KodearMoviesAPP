@@ -1,6 +1,6 @@
 import {styled} from "@mui/material/styles";
 
-export const SidebarContainer = styled('div')(({ theme }) => ({
+export const SidebarContainer = styled('div')(( ) => ({
     height: '100vh',
     padding: 20,
     display: 'flex',
@@ -9,7 +9,7 @@ export const SidebarContainer = styled('div')(({ theme }) => ({
     gap: '30vh'
 }));
 
-export const TabsContainer = styled('div')(({ theme }) => ({
+export const TabsContainer = styled('div')(() => ({
     display: 'flex',
     flexDirection: 'column',
     gap: 10,
