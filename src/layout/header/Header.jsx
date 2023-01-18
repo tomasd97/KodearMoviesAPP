@@ -7,6 +7,7 @@ import {useLocation} from "react-router-dom";
 
 const Header = ({ onOpenNav }) => {
     const location = useLocation()
+    const disabledOn = ['/details', '/favorites'];
     return(
         <StyledRoot>
             <StyledToolbar>
@@ -21,7 +22,7 @@ const Header = ({ onOpenNav }) => {
                     <Iconify icon="eva:menu-2-fill" />
                 </IconButton>
                 {
-                    location.pathname !== '/details' && <SearchBar/>
+                    !disabledOn.includes(location.pathname) && <SearchBar/>
                 }
             </StyledToolbar>
         </StyledRoot>
