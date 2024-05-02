@@ -1,5 +1,4 @@
-# KodearMoviesAPP
-Movies app for technical test
+Movies app
 
 Pasos para correr el proyecto:
 
